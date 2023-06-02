@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Hanken Grotesk Bold";
+  src: url(../assets/fonts/static/HankenGrotesk-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Hanken Grotesk extra bold";
+  src: url(../assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Hanken Grotesk Medium";
+  src: url(../assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+
+body {
+  background-color: #ecf2ff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+  padding: 10rem;
+}
+
+#maincard {
+  width: 736px;
+  height: 512px;
+}
+
+.purplecard {
+  width: 368px;
+  height: 512px;
+  background-image: linear-gradient(
+    180deg,
+    #7755ff 0%,
+    #6943ff 0.01%,
+    #2f2ce9 100%
+  );
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.whitecard {
+  width: 736px;
+  height: 512px;
+  background: #ffffff;
+  box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+  border-radius: 32px;
+  display: flex;
+}
+
+.purpleheader {
+  width: 125px;
+  height: 31px;
+  font-family: "Hanken Grotesk Medium";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 31px;
+  color: #cac9ff;
+  position: absolute;
+  top: 275px;
+}
+
+.oval {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    #4d21c9 0%,
+    rgba(37, 33, 201, 0) 100%,
+    rgba(37, 33, 201, 0) 100%
+  );
+  position: absolute;
+  top: 335px;
+}
+
+.ovalResultBold {
+  font-size: 58px;
+  font-family: "Hanken Grotesk Bold", sans-serif;
+  color: white;
+}
+
+.ovalResultLight {
+  font-family: "Hanken Grotesk Bold", sans-serif;
+  color: white;
+  opacity: 0.5;
+}
+
+.purpleCardBottomText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Hanken Grotesk Medium";
+  color: white;
+  width: 260px;
+  position: absolute;
+  top: 580px;
+}
+
+.purpleCardBottomText p{
+  color: #CAC9FF;
+}
+
+.purpleCardBottomText h1{
+  padding-bottom: 15px;
+}
+
+.whiteCardSection {
+  width: 368px;
+  height: 512px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.whiteCardTitle {
+  font-family: 'Hanken Grotesk Medium';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #303B59;
+  position: absolute;
+  top: 275px;
+  left: 970px;
+}
+
+.statReaction {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 288px;
+  height: 56px;
+  background-color: #FFF6F6;
+  border-radius: 12px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.statIcon {
+  position: absolute;
+  left: 980px;
+}
+
+.statFieldReaction {
+  font-family: 'Hanken Grotesk Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FF5555;
+  position: absolute;
+  left: 1011px;
+}
+
+.statResult {
+  position: absolute;
+  left: 1160px;;
+  font-family: 'Hanken Grotesk Medium';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: right;
+  color: #303B59;
+}
+
+.statResult span{
+  opacity: 0.5;
+  padding-left: 8px;
+}
+
+.statMemory {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 288px;
+  height: 56px;
+  background-color: #fffbf4;
+  border-radius: 12px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.statFieldMemory {
+  font-family: 'Hanken Grotesk Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFB21E;
+  position: absolute;
+  left: 1011px;
+}
+
+.statVerbal {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 288px;
+  height: 56px;
+  background-color: #f2fcf9;
+  border-radius: 12px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.statFieldVerbal {
+  font-family: 'Hanken Grotesk Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #00BB8F;
+  position: absolute;
+  left: 1011px;
+}
+
+.statVisual{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 288px;
+  height: 56px;
+  background-color: #f3f4fd;
+  border-radius: 12px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.statFieldVisual {
+  font-family: 'Hanken Grotesk Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1125D6  ;
+  position: absolute;
+  left: 1011px;
+}
+
+.continueButton {
+  border: none;
+  Width: 288px;
+  Height: 56px;
+  border-radius: 128px;
+  background: #303B59;
+  font-family: 'Hanken Grotesk Medium';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.continueButton:hover {
+  background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+}

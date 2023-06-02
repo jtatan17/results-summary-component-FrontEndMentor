@@ -1,47 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+  </style> -->
+    <link rel="stylesheet" href="Styles/mainstyle.css" />
+  </head>
+  <body>
+    <main>
+      <div id="maincard">
+        <div class="whitecard">
+          <div class="purplecard">
+            <h6 class="purpleheader">Your Results</h6>
+            <div class="oval">
+              <p class="ovalResultBold">76</p>
+              <p class="ovalResultLight"> of 100</p>
+            </div>
+            <div class="purpleCardBottomText">
+              <h1>Great</h1>
+              <p>
+                Your performance exceed 65% of the people conducting the test
+                here!
+              </p>
+            </div>
+          </div>
+          <div class="whiteCardSection">
+            <h5 class="whiteCardTitle">Summary</h5>
+            <div>
+              <div class="statReaction">
+                <img class="statIcon" src="assets/images/icon-reaction.svg">
+                <p class="statFieldReaction">Reaction</p>
+                <p class="statResult">80<span>  /  100</span></p>
+              </div>
+              <div class="statMemory">
+                <img class="statIcon" src="assets/images/icon-memory.svg">
+                <p class="statFieldMemory">Memory</p>
+                <p class="statResult">92<span>  /  100</span></p>
+              </div>
+              <div class="statVerbal">
+                <img class="statIcon" src="assets/images/icon-verbal.svg">
+                <p class="statFieldVerbal">Verbal</p>
+                <p class="statResult">61<span>  /  100</span></p>
+              </div>
+              <div class="statVisual">
+                <img class="statIcon" src="assets/images/icon-visual.svg">
+                <p class="statFieldVisual">Visual</p>
+                <p class="statResult">73<span>  /  100</span></p>
+              </div>
+              <button class="continueButton">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-  Your Result
-  76
-  of 100
+    Your Result 76 of 100 Great You scored higher than 65% of the people who
+    have taken these tests. Summary Reaction 80 / 100 Memory 92 / 100 Verbal 61
+    / 100 Visual 72 / 100 Continue
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>

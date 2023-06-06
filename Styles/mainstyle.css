@@ -28,7 +28,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: 5rem;
-  padding: 10rem;
+  padding: 5rem;
 }
 
 #maincard {
@@ -70,8 +70,6 @@ main {
   font-size: 22px;
   line-height: 31px;
   color: #cac9ff;
-  position: absolute;
-  top: 275px;
 }
 
 .oval {
@@ -88,8 +86,7 @@ main {
     rgba(37, 33, 201, 0) 100%,
     rgba(37, 33, 201, 0) 100%
   );
-  position: absolute;
-  top: 335px;
+  
 }
 
 .ovalResultBold {
@@ -112,8 +109,7 @@ main {
   font-family: "Hanken Grotesk Medium";
   color: white;
   width: 260px;
-  position: absolute;
-  top: 580px;
+  padding-bottom: 50px;
 }
 
 .purpleCardBottomText p{
@@ -140,9 +136,6 @@ main {
   font-size: 24px;
   line-height: 31px;
   color: #303B59;
-  position: absolute;
-  top: 275px;
-  left: 970px;
 }
 
 .statReaction {
@@ -158,8 +151,7 @@ main {
 }
 
 .statIcon {
-  position: absolute;
-  left: 980px;
+  
 }
 
 .statFieldReaction {
@@ -169,13 +161,10 @@ main {
   font-size: 18px;
   line-height: 23px;
   color: #FF5555;
-  position: absolute;
-  left: 1011px;
+
 }
 
 .statResult {
-  position: absolute;
-  left: 1160px;;
   font-family: 'Hanken Grotesk Medium';
   font-style: normal;
   font-weight: 700;
@@ -183,6 +172,7 @@ main {
   line-height: 23px;
   text-align: right;
   color: #303B59;
+  padding-left: 60px;
 }
 
 .statResult span{
@@ -209,8 +199,6 @@ main {
   font-size: 18px;
   line-height: 23px;
   color: #FFB21E;
-  position: absolute;
-  left: 1011px;
 }
 
 .statVerbal {
@@ -232,8 +220,6 @@ main {
   font-size: 18px;
   line-height: 23px;
   color: #00BB8F;
-  position: absolute;
-  left: 1011px;
 }
 
 .statVisual{
@@ -255,11 +241,10 @@ main {
   font-size: 18px;
   line-height: 23px;
   color: #1125D6  ;
-  position: absolute;
-  left: 1011px;
 }
 
 .continueButton {
+  margin-top: 31px;
   border: none;
   Width: 288px;
   Height: 56px;

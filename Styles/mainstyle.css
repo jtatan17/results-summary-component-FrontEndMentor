@@ -129,6 +129,12 @@ main {
   justify-content: center;
 }
 
+.titleContainer{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .whiteCardTitle {
   font-family: 'Hanken Grotesk Medium';
   font-style: normal;
@@ -136,6 +142,7 @@ main {
   font-size: 24px;
   line-height: 31px;
   color: #303B59;
+  padding-left: 40px;
 }
 
 .statReaction {
@@ -150,9 +157,7 @@ main {
   margin-bottom: 16px;
 }
 
-.statIcon {
-  
-}
+
 
 .statFieldReaction {
   font-family: 'Hanken Grotesk Medium';

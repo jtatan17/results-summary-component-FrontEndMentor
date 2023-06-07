@@ -31,239 +31,482 @@ main {
   padding: 5rem;
 }
 
-#maincard {
-  width: 736px;
-  height: 512px;
-}
+@media (max-width: 750px) {
 
-.purplecard {
-  width: 368px;
-  height: 512px;
-  background-image: linear-gradient(
-    180deg,
-    #7755ff 0%,
-    #6943ff 0.01%,
-    #2f2ce9 100%
-  );
-  border-radius: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
+  .purplecard {
+    width: 375px;
+    height: 512px;
+    background-image: linear-gradient(
+      180deg,
+      #7755ff 0%,
+      #6943ff 0.01%,
+      #2f2ce9 100%
+    );
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-.whitecard {
-  width: 736px;
-  height: 512px;
-  background: #ffffff;
-  box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
-  border-radius: 32px;
-  display: flex;
-}
+  .whitecard {
+    width: 375px;
+    height: 912px;
+    background: #ffffff;
+    box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+  }
 
-.purpleheader {
-  width: 125px;
-  height: 31px;
-  font-family: "Hanken Grotesk Medium";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 31px;
-  color: #cac9ff;
-}
+  .purpleheader {
+    width: 125px;
+    height: 31px;
+    font-family: "Hanken Grotesk Medium";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 31px;
+    color: #cac9ff;
+  }
 
-.oval {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  background: linear-gradient(
-    180deg,
-    #4d21c9 0%,
-    rgba(37, 33, 201, 0) 100%,
-    rgba(37, 33, 201, 0) 100%
-  );
+  .oval {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: linear-gradient(
+      180deg,
+      #4d21c9 0%,
+      rgba(37, 33, 201, 0) 100%,
+      rgba(37, 33, 201, 0) 100%
+    );
+  }
+
+  .ovalResultBold {
+    font-size: 58px;
+    font-family: "Hanken Grotesk Bold", sans-serif;
+    color: white;
+  }
+
+  .ovalResultLight {
+    font-family: "Hanken Grotesk Bold", sans-serif;
+    color: white;
+    opacity: 0.5;
+  }
+
+  .purpleCardBottomText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Hanken Grotesk Medium";
+    color: white;
+    width: 260px;
+    padding-bottom: 50px;
+  }
+
+  .purpleCardBottomText p {
+    color: #cac9ff;
+  }
+
+  .purpleCardBottomText h1 {
+    padding-bottom: 15px;
+  }
+
+  .whiteCardSection {
+    width: 368px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titleContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .whiteCardTitle {
+    font-family: "Hanken Grotesk Medium";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #303b59;
+    padding-left: 40px;
+  }
+
+  .statReaction {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 288px;
+    height: 56px;
+    background-color: #fff6f6;
+    border-radius: 12px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .statFieldReaction {
+    font-family: "Hanken Grotesk Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ff5555;
+  }
+
+  .statResult {
+    font-family: "Hanken Grotesk Medium";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: right;
+    color: #303b59;
+    padding-left: 60px;
+  }
+
+  .statResult span {
+    opacity: 0.5;
+    padding-left: 8px;
+  }
+
+  .statMemory {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 288px;
+    height: 56px;
+    background-color: #fffbf4;
+    border-radius: 12px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .statFieldMemory {
+    font-family: "Hanken Grotesk Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffb21e;
+  }
+
+  .statVerbal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 288px;
+    height: 56px;
+    background-color: #f2fcf9;
+    border-radius: 12px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .statFieldVerbal {
+    font-family: "Hanken Grotesk Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #00bb8f;
+  }
+
+  .statVisual {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 288px;
+    height: 56px;
+    background-color: #f3f4fd;
+    border-radius: 12px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .statFieldVisual {
+    font-family: "Hanken Grotesk Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #1125d6;
+  }
+
+  .continueButton {
+    margin-top: 31px;
+    border: none;
+    width: 288px;
+    height: 56px;
+    border-radius: 128px;
+    background: #303b59;
+    font-family: "Hanken Grotesk Medium";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .continueButton:hover {
+    background: linear-gradient(
+      180deg,
+      #7755ff 0%,
+      #6943ff 0.01%,
+      #2f2ce9 100%
+    );
+  }
+}
+@media (min-width: 750px) {
+
   
-}
 
-.ovalResultBold {
-  font-size: 58px;
-  font-family: "Hanken Grotesk Bold", sans-serif;
-  color: white;
-}
+  #maincard {
+    width: 736px;
+    height: 512px;
+  }
 
-.ovalResultLight {
-  font-family: "Hanken Grotesk Bold", sans-serif;
-  color: white;
-  opacity: 0.5;
-}
+  .purplecard {
+    width: 368px;
+    height: 512px;
+    background-image: linear-gradient(
+      180deg,
+      #7755ff 0%,
+      #6943ff 0.01%,
+      #2f2ce9 100%
+    );
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-.purpleCardBottomText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Hanken Grotesk Medium";
-  color: white;
-  width: 260px;
-  padding-bottom: 50px;
-}
+  .whitecard {
+    width: 736px;
+    height: 512px;
+    background: #ffffff;
+    box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: row;
+  }
 
-.purpleCardBottomText p{
-  color: #CAC9FF;
-}
+  .purpleheader {
+    width: 125px;
+    height: 31px;
+    font-family: "Hanken Grotesk Medium";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 31px;
+    color: #cac9ff;
+  }
 
-.purpleCardBottomText h1{
-  padding-bottom: 15px;
-}
+  .oval {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: linear-gradient(
+      180deg,
+      #4d21c9 0%,
+      rgba(37, 33, 201, 0) 100%,
+      rgba(37, 33, 201, 0) 100%
+    );
+  }
 
-.whiteCardSection {
-  width: 368px;
-  height: 512px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  .ovalResultBold {
+    font-size: 58px;
+    font-family: "Hanken Grotesk Bold", sans-serif;
+    color: white;
+  }
 
-.titleContainer{
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-}
+  .ovalResultLight {
+    font-family: "Hanken Grotesk Bold", sans-serif;
+    color: white;
+    opacity: 0.5;
+  }
 
-.whiteCardTitle {
-  font-family: 'Hanken Grotesk Medium';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 31px;
-  color: #303B59;
-  padding-left: 40px;
-}
+  .purpleCardBottomText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Hanken Grotesk Medium";
+    color: white;
+    width: 260px;
+    padding-bottom: 50px;
+  }
 
-.statReaction {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 288px;
-  height: 56px;
-  background-color: #FFF6F6;
-  border-radius: 12px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
+  .purpleCardBottomText p {
+    color: #cac9ff;
+  }
 
+  .purpleCardBottomText h1 {
+    padding-bottom: 15px;
+  }
 
+  .whiteCardSection {
+    width: 368px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-.statFieldReaction {
-  font-family: 'Hanken Grotesk Medium';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 23px;
-  color: #FF5555;
+  .titleContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
 
-}
+  .whiteCardTitle {
+    font-family: "Hanken Grotesk Medium";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #303b59;
+    padding-left: 40px;
+  }
 
-.statResult {
-  font-family: 'Hanken Grotesk Medium';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23px;
-  text-align: right;
-  color: #303B59;
-  padding-left: 60px;
-}
+  .statReaction {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 288px;
+    height: 56px;
+    background-color: #fff6f6;
+    border-radius: 12px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
 
-.statResult span{
-  opacity: 0.5;
-  padding-left: 8px;
-}
+  .statFieldReaction {
+    font-family: "Hanken Grotesk Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ff5555;
+  }
 
-.statMemory {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 288px;
-  height: 56px;
-  background-color: #fffbf4;
-  border-radius: 12px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
+  .statResult {
+    font-family: "Hanken Grotesk Medium";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: right;
+    color: #303b59;
+    padding-left: 60px;
+  }
 
-.statFieldMemory {
-  font-family: 'Hanken Grotesk Medium';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 23px;
-  color: #FFB21E;
-}
+  .statResult span {
+    opacity: 0.5;
+    padding-left: 8px;
+  }
 
-.statVerbal {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 288px;
-  height: 56px;
-  background-color: #f2fcf9;
-  border-radius: 12px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
+  .statMemory {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 288px;
+    height: 56px;
+    background-color: #fffbf4;
+    border-radius: 12px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
 
-.statFieldVerbal {
-  font-family: 'Hanken Grotesk Medium';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 23px;
-  color: #00BB8F;
-}
+  .statFieldMemory {
+    font-family: "Hanken Grotesk Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffb21e;
+  }
 
-.statVisual{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 288px;
-  height: 56px;
-  background-color: #f3f4fd;
-  border-radius: 12px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
+  .statVerbal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 288px;
+    height: 56px;
+    background-color: #f2fcf9;
+    border-radius: 12px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
 
-.statFieldVisual {
-  font-family: 'Hanken Grotesk Medium';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 23px;
-  color: #1125D6  ;
-}
+  .statFieldVerbal {
+    font-family: "Hanken Grotesk Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #00bb8f;
+  }
 
-.continueButton {
-  margin-top: 31px;
-  border: none;
-  Width: 288px;
-  Height: 56px;
-  border-radius: 128px;
-  background: #303B59;
-  font-family: 'Hanken Grotesk Medium';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23px;
-  text-align: center;
-  color: #FFFFFF;
-}
+  .statVisual {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 288px;
+    height: 56px;
+    background-color: #f3f4fd;
+    border-radius: 12px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
 
-.continueButton:hover {
-  background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+  .statFieldVisual {
+    font-family: "Hanken Grotesk Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #1125d6;
+  }
+
+  .continueButton {
+    margin-top: 31px;
+    border: none;
+    width: 288px;
+    height: 56px;
+    border-radius: 128px;
+    background: #303b59;
+    font-family: "Hanken Grotesk Medium";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .continueButton:hover {
+    background: linear-gradient(
+      180deg,
+      #7755ff 0%,
+      #6943ff 0.01%,
+      #2f2ce9 100%
+    );
+  }
 }
